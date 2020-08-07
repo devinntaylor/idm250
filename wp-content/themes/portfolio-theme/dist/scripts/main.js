@@ -1,0 +1,1 @@
+console.log('this is loading the main.js file in our /dist/js/main.js');

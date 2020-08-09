@@ -1,15 +1,5 @@
 <?php get_header(); ?>
 
-<header> 
-
-<nav>
-    <ul>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-    </ul>
-<nav>
-
-</header>
+    //this is the index
 
 <?php get_footer(); ?>

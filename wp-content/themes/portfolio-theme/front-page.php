@@ -1,17 +1,14 @@
-<?php get_header(); ?>
+<?php 
 
-<header> 
+/* THE TEMPLATE FROR DISPLAYING THE FRONT PAGE
 
-<nav>
-    <ul>
-        <li>Home</li>
-        <li>Home</li>
-        <li>Home</li>
-    </ul>
-<nav>
+this is the template that displays on the front page only.
 
-</header>
+set this in settings > reading > static page */
 
-<h1>Front Page</h1>
 
+
+
+get_header(); ?>
+Front Page
 <?php get_footer(); ?>

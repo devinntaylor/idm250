@@ -1,39 +1,33 @@
-<?php get_header(); ?>
-
-<main class="main-content">
-<?php while (have_posts()) : the_post (); ?>
-<div class="container split-sidebar">
-
-<!-- MAIN CONTENT !--> 
-
-<div class="column-main">
-
-<h1 class="post_title"><?php the_title();  ?></h1>
-
-<?php the_post_thumbnail();  ?>
-
-<?php 
-$categories = get_the_category();
+<?php
+/**
+ * The template for displaying all single posts.
+ *
+ */
 ?>
+<?php get_header();?>
+<main class="main-content">
+  <?php while (have_posts()) : the_post(); ?>
+    <div class="container split-sidebar">
+        <!-- Main Content -->
+        <div class="column column-main">
+          <h1 class="post_title js-blog-heading"><?php the_title(); ?></h1>
 
-<p class="post_meta"><?php the_date('n-y') ?> <?php the_category(); ?> </p>
+          <?php the_post_thumbnail(); ?>
 
-<div class="intro">
-    <?php the_excerpt();  ?>
-</div>
+          <p class="post_meta"><?php the_date('n-y') ?> | <?php  the_category(); ?></p>
 
-<div class="page-builder">
-    <?php the_content();  ?>
-</div>
+          <div class="intro">
+            <?php the_excerpt();?>
+          </div>
 
-<?php the_tags();  ?>
+          <div class="page-builder">
+            <?php the_content(); ?>
+          </div>
+            <?php the_tags(); ?>
+        </div>
 
-</div>
- 
-<?php get_sidebar(); ?>
-
-</div>
-<?php endwhile; ?>
+        <?php get_sidebar(); ?>
+    </div>
+  <?php endwhile; ?>
 </main>
-
 <?php get_footer(); ?>

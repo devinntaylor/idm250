@@ -1,4 +1,10 @@
 <?php
+/*
+Template Name: Experience
+*/
+?>
+
+<?php
 /**
  * The template for displaying the front page.
  *
@@ -7,7 +13,8 @@
  *
  */
 get_header();?>
-  <?php get_template_part('components/hero'); ?>
-  <?php get_template_part('components/featured-works'); ?>
-  <!-- <?php get_template_part('components/recent-posts'); ?> -->
+<?php while (have_posts()) : the_post (); ?>
+  <?php get_template_part('components/my-experience'); ?>
+  <?php get_template_part('components/work'); ?>
+<?php endwhile; ?>
 <?php get_footer(); ?>

@@ -8,7 +8,7 @@
 
 // CHECK WP VERSION
 
-if (version_compare($GLOBALS['wp_version'], '5.4.2', '>')){
-    die('WP theme only works in WordPress 5.4.2 or later. Please upgrade your WP site.');
+if (version_compare($GLOBALS['wp_version'], '5.5.1', '<')){
+    die('WP theme only works in WordPress 5.5 or later. Please upgrade your WP site.');
 }
 

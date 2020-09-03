@@ -1,9 +1,9 @@
 <?php
 
 // REGISTER PROJECT CPT
-function register_projects_post_type() {
-    $singular = 'Project';
-    $plural = 'Projects';
+function register_portfolio_post_type() {
+    $singular = 'Portfolio';
+    $plural = 'Portfolio';
 
     $labels = [
     'name'                  => $plural,
@@ -56,7 +56,7 @@ function register_projects_post_type() {
     'menu_icon'             => 'dashicons-clipboard'
     // 'menu_icon'             => get_stylesheet_directory_uri() . '/static/images/icons/industries.png'
 ];
-    register_post_type('projects', $args);
+    register_post_type('portfolio', $args);
 }
 
-add_action('init', 'register_projects_post_type', 0);
+add_action('init', 'register_portfolio_post_type', 0);

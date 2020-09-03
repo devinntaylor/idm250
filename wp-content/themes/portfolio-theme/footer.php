@@ -17,8 +17,7 @@
 
 <div class="social-menu">
 <?php wp_nav_menu(['theme_location' => 'social_menu']);?>
-</div>
-
+</p>
 
 </footer>
 <?php wp_footer(); ?>
